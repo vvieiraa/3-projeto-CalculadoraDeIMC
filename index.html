@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="peso.ico" type="peso">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <header>
+        <div class=titulo>
+          <h1>Calculadora de IMC</h1>
+        </div>
+    </header>
+    <main>
+            <div class="calculadora">
+                <h2 class="alt">Altura</h2>
+                <input type="number" class="altura" name="altura" id="altura" placeholder="0.00 m"> 
+                <h2 class="pes">Peso</h2>
+                <input type="number" class= "peso" name="peso" id="peso" placeholder="00.0 kg">
+                <input type="button" value="Calcular" class="btn" id="calcular" onclick="calcular()">
+                <div id="res" class="res">IMC: 00.00</div>
+            </div>
+        </div>
+        <script>
+
+            function calcular() {
+
+                var altura = window.document.getElementById("altura").value
+                var peso = window.document.getElementById("peso").value
+            
+                console.log("Calculadora de IMC \n");
+                console.log(`Altura: ${altura} m`);
+                console.log(`peso: ${peso} kg \n`);
+            
+                const resultado = (peso / (altura * altura)).toFixed(2)
+
+                //retorno do resultado do IMC
+                var res = window.document.getElementById("res");
+                res.innerHTML = `IMC: ${resultado}`
+            }
+        </script>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

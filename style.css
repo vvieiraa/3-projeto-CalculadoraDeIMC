@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "special";
+    src: url("SpecialElite-Regular.ttf");
+}
+
+@font-face {
+    font-family: "nunito";
+    src: url("Nunito-Light.ttf");
+}
+
+body {
+    background-image: url("boxe-full.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    color: white;
+    font-family: "special";
+    font-size: 3em;
+    padding: 1em;
+    text-align: center;
+}
+
+.calculadora {
+    display: flex;
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.589);
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 45%;
+    margin-top: 5%;
+    padding: 2em;
+    width: 10%;
+}
+
+.alt {
+    font-size: 2em;
+    font-family: "nunito";
+    margin-bottom: 10px;
+}
+
+.altura {
+    font-size: 1.5em;
+    font-family: "nunito";
+}
+
+.pes {
+    font-size: 2em;
+    font-family: "nunito";
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.peso {
+    font-size: 1.5em;
+    font-family: "nunito";
+}
+
+.btn {
+    margin-top: 15px;
+    font-size: 1.5em;
+    background: rgba(100, 100, 100, 0.678);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.res {
+    font-size: 1.5em;
+    font-family: "nunito";
+    background: rgba(153, 153, 153, 0.322);
+    border: 1px solid rgb(139, 139, 139);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 1px;
+}
